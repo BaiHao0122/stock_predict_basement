@@ -39,3 +39,9 @@ RSI（compute_rsi）—— 算 “涨跌力度”：就像两个人拔河，RSI 
     rsi = 100 - (100 / (1 + rs))
     
     return rsi
+import akshare as ak
+# 下载海航科技日K数据
+stock_df = ak.stock_zh_a_hist(symbol=600751, period=daily, start_date=20251101, end_date=20260324, adjust=)
+# 保存为CSV
+stock_df.to_csv(海航科技日K数据.csv, index=False, encoding=utf-8-sig)
+爬取股票专用工具，导出呈.csv文件
